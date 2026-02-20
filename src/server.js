@@ -1,5 +1,5 @@
-import Fastify from 'fastify';
-import app from './app.js';
+import Fastify from "fastify";
+import app from "./app.js";
 
 const fastify = Fastify({
   logger: true,
