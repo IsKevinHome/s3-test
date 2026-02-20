@@ -34,4 +34,9 @@ Fastify API with S3 image uploads and MongoDB (Mongoose).
 
 PORT, NODE_ENV, MONGODB_URI, AWS_REGION, AWS_ACCESS_KEY_ID,
 AWS_SECRET_ACCESS_KEY, S3_BUCKET_NAME, SIGNED_URL_EXPIRY,
-MAX_FILE_SIZE, ALLOWED_MIME_TYPES, CORS_ORIGIN
+MAX_FILE_SIZE, ALLOWED_MIME_TYPES, CORS_ORIGIN,
+CLERK_PUBLISHABLE_KEY, CLERK_SECRET_KEY
+
+## Authentication (future)
+
+Clerk (`@clerk/fastify` + `@clerk/clerk-react`). Backend registers `clerkPlugin()` in app.js; routes use `getAuth(req)` or a `preHandler` hook for protection. Env vars: CLERK_PUBLISHABLE_KEY, CLERK_SECRET_KEY.
