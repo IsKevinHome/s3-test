@@ -11,6 +11,11 @@ npm run dev   # Development with auto-reload
 npm start     # Production
 ```
 
+## Health Checks
+
+- `GET /health` - General API health status
+- `GET /health/s3` - Verifies S3 credentials and bucket access
+
 ## Structure
 
 ```
